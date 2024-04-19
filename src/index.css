@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-color-1: #f0eaf8;
+  --brand-color-2: #cbb6e5;
+  --brand-color-3: #761be4;
+  --brand-color-4: #6a19cd;
+  --brand-color-5: #000853;
+  --color-white: #fff;
+  --color-gray-1: #898da9;
+  --radius: 8px;
+  --color-error-1: #feecec;
+  --color-error-2: #ed4545;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+input {
+  outline: none;
+}
+
+button.disabled {
+  pointer-events: none;
+}
+
+.border-brand-2 {
+  border-color: var(--brand-color-2);
+}
+
+.bg-brand-3 {
+  background-color: var(--brand-color-3);
+}
+
+.bg-brand-2 {
+  background-color: var(--brand-color-2);
+}
+
+.focus\:border-brand-3:focus {
+  border: 2px solid var(--brand-color-3);
+}
+
+.hover\:bg-brand-4:hover {
+  background-color: var(--brand-color-4);
+}
+
+.error\:bg {
+  background-color: var(--color-error-1) !important;
+}
+
+.error\:border {
+  border: 2px solid var(--color-error-2) !important;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f0eaf8;
+}
+
+@media screen and (max-width: 749px) {
+  body {
+    padding: 0 1.5rem;
+  }
+}
+
+body,
+input::placeholder {
+  color: var(--brand-color-5);
+}
+
+input {
+  font-weight: 500;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
