@@ -20,7 +20,27 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f0eaf8;
+}
+
+@media screen and (max-width: 749px) {
+  body {
+    padding: 0 1.5rem;
+  }
+}
+
+body,
+input::placeholder {
+  color: var(--brand-color-5);
+}
+
 input {
+  font-weight: 500;
   outline: none;
 }
 
@@ -54,32 +74,4 @@ button.disabled {
 
 .error\:border {
   border: 2px solid var(--color-error-2) !important;
-}
-
-body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #f0eaf8;
-}
-
-@media screen and (max-width: 749px) {
-  body {
-    padding: 0 1.5rem;
-  }
-}
-
-body,
-input::placeholder {
-  color: var(--brand-color-5);
-}
-
-input {
-  font-weight: 500;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
